@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>电影推荐</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link href="../bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- <link href="../css/indexcss.css" rel="stylesheet"> -->
+    <link href="../css/contentcss.css" rel="stylesheet">
+    <script src="../bootstrap-3.3.7-dist/js/jquery-3.3.1.min.js"></script>
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="../bootstrap-3.3.7-dist/js/jquery.mousewheel.js"></script>
+    <style type="text/css">
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body p {
+            color: #000;
+        }
+
+        .bg {
+            display: table;
+            width: 100%;
+            height: 100%;
+            padding: 0 0;
+            color: #fff;
+            background: url(../image/index/bg1.png) no-repeat bottom center;
+            background-color: #000;
+            background-size: cover;
+            animation: bgAnimation 2.5s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes bgAnimation {
+            0% {
+                opacity: 0;
+                background-size: 130%;
+            }
+
+            100% {
+                opacity: 1;
+                background-size: 100%;
+            }
+        }
+
+        .bgscroll {
+            float: left;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+
+<body id="type0" class="" style="background: #fff;">
+    <a href="../index.html">
+	<!--右下角返回主页栏-->
+    <div class="box">
+        <div class="bg2"><img src="../image/contents/home.png" alt="..." style="width: 100%"></div>
+        <div class="cover"><p>返回首页</p></div>
+    </div> </a>
+
+
+    <div class="bgscroll">
+        <div style="background: transparent" id="n0" class="panel">
+            <div class="bg" style="position:fixed;z-index: -1;"></div>
+            <div class="bg" style="background:transparent;position: relative;">
+                <!-- <div style="width: 8%;height: 10%;background: rgba(200, 200, 200, 0.5);left: 46%;top: 85%;position: absolute;">
+            <a href="#n1"><img src="../image/contents/down.png" alt="..." style="width: 80%;left: 10%;top:5%;position: absolute;"></a>
+        </div> -->
+                <div id="down" style="width: 8%;height: 10%;background: rgba(200, 200, 200, 0);left: 46%;top: 85%;position: absolute;z-index: 100">
+                    <a href="#n1" class="turnToContent">
+                        <canvas id="downCanvas" width="50" height="50" style="background: transparent;opacity: 0;">你的浏览器不支持canvas，请下载更新版本的浏览器
+                        </canvas>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="">
+            <div class="bg panel" id="n1" style="background: #F4F4F4;animation: none;margin-bottom: 0px;" >
+                <div style="margin-left: 10%;margin-top: 3%;width: 80%;background: transparent;height: 90%;overflow: hidden;">
+                    <div style="float: left;width: 20%;margin: 0;padding: 0;background: transparent">
+                        <img src="../image/contents/1_1/p1.jpg" alt="..." class="img1" style="float: left;">
+                    </div>
+                    <div style="background: #F4FCFC;height: 48%;width: 80%;float: left;padding: 40px;overflow: hidden;">
+                        <p style="font-size: 60px;margin-bottom: 20px">海王 Aquanman (2018)</p>
+                        <p style="font-size: 15px;margin-top: -30px">xx评分:9.9</p>
+                        <p style="font-size: 20px">电影简介：</p>
+                        <p style="font-size: 20px;">电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介
+                            电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介
+                            电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介
+                            电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介电影简介v</p>
+                    </div>
+				  	<div style="background: #F4FCFC;float: left;margin-top: 20px;width:100%">
+						<div style="background: transparent; height: 85px; float: left; width: 100%; margin: 0; padding:20px">
+                        <p style="font-size: 25px">主要演职员：</p>
+                    	</div>
+						<div style="width: 100%;height: 38%;overflow: hidden;background: transparent">
+                        <div class="scrollpic">
+                            <ul id="scrollx2">
+                                <div id="scrollx">
+                                    <li><img src="../image/contents/1_1/p1.jpg" alt="...">
+                                        <p>温子仁</p>
+                                        <p>导演</p>
+                                    </li>
+                                    <li><img src="../image/contents/1_1/p1.jpg" alt="...">
+                                        <p>温子仁</p>
+                                        <p>导演</p>
+                                    </li>
+                                    <li><img src="../image/contents/1_1/p1.jpg" alt="...">
+                                        <p>温子仁</p>
+                                        <p>导演</p>
+                                    </li>
+                                    <li><img src="../image/contents/1_1/p1.jpg" alt="...">
+                                        <p>温子仁</p>
+                                        <p>导演</p>
+                                    </li>
+                                    <li><img src="../image/contents/1_1/p1.jpg" alt="...">
+                                        <p>温子仁</p>
+                                        <p>导演</p>
+                                    </li>
+                                    <li><img src="../image/contents/1_1/p1.jpg" alt="...">
+                                        <p>温子仁</p>
+                                        <p>导演</p>
+                                    </li>
+                                    <li><img src="../image/contents/1_1/p1.jpg" alt="...">
+                                        <p>温子仁</p>
+                                        <p>导演</p>
+                                    </li>
+                                </div>
+                            </ul>
+                            <a href="javascript:void(0)" id="scrollToLeft">
+                                <div class="scroll-left">
+                                    <img src="../image/contents/left.png" alt="...">
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" id="scrollToRight">
+                                <div class="scroll-right">
+                                    <img src="../image/contents/right.png" alt="...">
+                                </div>
+                            </a>
+                        </div>
+                    	</div>
+					</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="">
+            <div class="bg panel" style="background: #ECECEC;#fff;animation: none;margin-bottom: 0px;" id="n2">
+                <div class="vertical-scroll">
+                    <ul>
+                        <div id="img1"><a href="javascript:void(0)1"><img src="../image/contents/1_1/img1.png" alt="..."></a></div>
+                        <div id="img2"> <a href="javascript:void(0)2"><img src="../image/contents/1_1/img2.png" alt="..."></a></div>
+                        <div id="img3"> <a href="javascript:void(0)3"><img src="../image/contents/1_1/img3.png" alt="..."></a></div>
+                        <div id="img4"> <a href="javascript:void(0)4"><img src="../image/contents/1_1/img4.png" alt="..."></a></div>
+                        <div id="img5"> <a href="javascript:void(0)5"><img src="../image/contents/1_1/img5.png" alt="..."></a></div>
+                    </ul>
+                </div>
+                <div class="commentDiv">
+
+                    <p>影评：</p>
+
+                    <div style="background: transparent;width: 100%;height: 20%;overflow: hidden;margin-left: 30%">
+                        <div style="width: 50%;float: left;">
+                            <p style="font-size: 20px;padding-left: 80px">影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容
+                                影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容
+                            </p>
+                        </div>
+                        <div style="background: transparent;float: left;;width: 20%;height: 100%;">
+                            <img src="../image/contents/image1.jpg" class="circleimg">
+                        </div>
+                    </div>
+
+                    <div style="background:transparent ;width: 100%;height: 20%;overflow: hidden;">
+                        <div style="background: transparent;float: left;;width: 20%;height: 100%;">
+                            <img src="../image/contents/image1.jpg" class="circleimg">
+                        </div>
+                        <div style="width: 50%;float: left;">
+                            <p style="font-size: 20px;padding-right: 80px;">影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容
+                                影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div style="background: transparent;width: 100%;height: 20%;overflow: hidden;margin-left: 30%">
+                        <div style="width: 50%;float: left;">
+                            <p style="font-size: 20px;padding-left: 80px">影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容
+                                影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容
+                            </p>
+                        </div>
+                        <div style="background: transparent;float: left;;width: 20%;height: 100%;">
+                            <img src="../image/contents/image1.jpg" class="circleimg">
+                        </div>
+                    </div>
+
+                    
+                    <div style="background:transparent ;width: 100%;height: 20%;overflow: hidden;">
+                        <div style="background: transparent;float: left;;width: 20%;height: 100%;">
+                            <img src="../image/contents/image1.jpg" class="circleimg">
+                        </div>
+                        <div style="width: 50%;float: left;">
+                            <p style="font-size: 20px;padding-right: 80px;">影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容
+                                影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容影评内容
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/content.js"></script>
+    <script src="../js/jquery.easing.1.3.js"></script>
+    <script src="../js/jquery.scrollify.js"></script>
+	
+    <script>
+		
+        $(".bgscroll").css({
+            "height": window.innerHeight + "px"
+        });
+        $(function () {
+            $('.panel').css({
+                'height': $('.bgscroll').height()
+            });
+            $.scrollify({
+                section: '.panel',
+                target: '.bgscroll'
+
+            });
+        });
+        $('.panel').css({
+            'height': (window.innerHeight) + "px"
+        });
+    </script>
+	
+</body>
+
+</html>

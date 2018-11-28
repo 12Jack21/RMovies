@@ -1,0 +1,381 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/*非常重要的样式让背景图片100%适应整个屏幕*/
+.bg {
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(bg1.png) no-repeat bottom center;
+    background-color: #000;
+    background-size: cover;
+}
+
+.my-navbar {
+    padding: 15px 0 0px 0;
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out, height 0.5s ease-in-out;
+    height: 80px;
+}
+
+
+.my-navbar a {
+    background: transparent !important;
+    color: #fff;
+    transition: color 0.3s ease-in-out 0.3s;
+    font-size: 25px;
+}
+
+.my-navbar a:hover {
+    color: #45bcf9;
+    background: transparent;
+}
+
+/*-webkit-transition ;-moz-transition*/
+.top-nav {
+    padding: 1px 0 0 0;
+    background: rgba(255, 255, 255, 0.6);
+    height: 55px;
+}
+
+.top-nav a {
+    color: #000;
+    font-weight: 500;
+}
+
+
+.picture1 {
+    box-align: center;
+    height: 20%;
+    width: 20%
+}
+
+.myShake:hover {
+    animation: shake 0.3s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+.myImgTrans a img:first-child {
+    opacity: 1;
+    transition: opacity 0.1s ease-in-out 0.1s;
+}
+
+.myImgTrans a:hover img:first-child {
+    opacity: 0;
+    display: block;
+}
+
+.myImgTrans a img+img {
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out 0.1s
+}
+
+.myImgTrans a:hover img+img {
+    opacity: 1;
+    display: block
+}
+
+img {
+    width: auto;
+    max-width: 100%;
+}
+
+.blackColor {
+    color: #000;
+}
+
+.myScorllList {
+    background: transparent;
+    top: -5px;
+    position: relative;
+    margin-right: -30px;
+}
+
+.myScorllList ul {
+    list-style: none;
+    overflow: hidden;
+    height: 35px;
+    margin-left: -40px;
+}
+
+.myScorllList:hover li {
+    top: -45px;
+    background: transparent;
+    font-size: 30px;
+}
+
+.myScorllList li {
+    top: 5px;
+    height: 50px;
+    font-size: 25px;
+    position: relative;
+    transition: background 0.5s ease-in-out 0.5s, top 0.5s ease-in-out, font-size 0.7s ease-in-out 0.3s;
+    background: transparent;
+}
+
+.myScorllList_big {
+    background: transparent;
+    top: -5px;
+    position: relative;
+    margin-right: -30px;
+}
+
+.myScorllList_big ul {
+    list-style: none;
+    overflow: hidden;
+    height: 35px;
+    margin-left: -40px;
+}
+
+.myScorllList_big:hover li {
+    top: -45px;
+    background: transparent;
+    font-size: 35px;
+}
+
+.myScorllList_big li {
+    top: 5px;
+    height: 50px;
+    font-size: 30px;
+    position: relative;
+    transition: background 0.5s ease-in-out 0.5s, top 0.5s ease-in-out, font-size 0.7s ease-in-out 0.3s;
+    background: transparent;
+}
+
+.flip-3d {
+    perspective: 1200px;
+    width: 100%;
+    float: left;
+}
+
+.flip-3d figure {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s transform;
+    font-size: 50px;
+    margin: 5px;
+}
+
+.flip-3d figure img {
+    width: 100%;
+    height: auto;
+    transform: rotateY(.5turn) translateZ(1px);
+    filter: blur(2px);
+    transition: filter 0.3s ease-in-out;
+}
+
+.flip-3d figure figcaption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+
+    background: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding-top: 20%;
+    opacity: 1;
+    transition: 1s .5s opacity;
+    color: #000;
+}
+
+.flip-3d:hover figure {
+    transform: rotateY(.5turn);
+}
+
+.flip-3d:hover figure figcaption {
+    opacity: 1;
+}
+
+.flip-3d:hover figure img {
+    filter: blur(0);
+}
+
+.flip-3d figure:after {
+    content: " ";
+    display: block;
+    width: 100%;
+    transform: rotateX(90deg);
+    background-image: radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.moveText1 {
+    width: 600px;
+    overflow: hidden;
+    height: 750px;
+    margin-top: -750px;
+    margin-left: 250px;
+    /*background: yellow;*/
+}
+
+.moveText1 p {
+    color: #fff;
+    font-size: 180px;
+    margin-top: 100px;
+    animation: moveText1Anime 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveText1Anime {
+    0% {
+        margin-top: 100px;
+        opacity: 0;
+    }
+
+    100% {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+.moveText2 {
+    width: 800px;
+    overflow: hidden;
+    height: 500px;
+    margin-top: -500px;
+    margin-left: 1000px;
+    background: transparent;
+	/*background-color: aqua;*/
+}
+
+.moveText2 p {
+    color: #fff;
+    font-size: 100px;
+    margin-top: 100px;
+    animation: moveText1Anime 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveText2Anime {
+    0% {
+        margin-top: 100px;
+        opacity: 0;
+    }
+
+    100% {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+.move3 {
+    visibility: visible;
+}
+
+.move3 p {
+    animation: move3Anime 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.move3>div:first-of-type {
+    animation: move3Anime 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    margin-top: 100px;
+}
+
+.move3>div:nth-of-type(2) {
+    animation: move3Anime 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+    margin-top: 100px;
+}
+
+.move3>div:last-of-type {
+    animation: move3Anime 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity: 0;
+    margin-top: 100px;
+}
+
+
+@keyframes move3Anime {
+    0% {
+        margin-top: 100px;
+        opacity: 0;
+    }
+
+    100% {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+
+.galary {
+    left: 5%;
+    top: 10px;
+    width: 100%;
+    transition: 0.3s;
+    position: absolute;
+    text-align: center;
+}
+.galary:hover{
+    top: 0px;
+}
+.galary:hover img{
+    box-shadow: 0 3px 15px 3px rgba(51, 51, 51, 0.5);
+}
+
+.galary p{
+    font-size: 50px;
+    color: #000;
+    padding-top: 80px;
+}
+
+.galary img{
+    width: 90%;
+    height: 100%;
+    box-shadow: 0 0 3px 1px rgba(51, 51, 51, 0.5);
+    filter: blur(2px);
+}
+
+.galary div{
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.newbg{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 0;
+    overflow: hidden;
+    
+}
