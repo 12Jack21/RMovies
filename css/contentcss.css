@@ -31,7 +31,7 @@
 
 .scrollpic img {
     width: 170px;
-
+    height: 250px;
 }
 
 .scrollpic p {
@@ -96,13 +96,15 @@
 }
 
 .vertical-scroll {
-    width: 30%;
+    background: url(../image/contents/1_1/bg2.jpg);
+	border-radius: 20px;
+    width: 28%;
     /*background: rgba(0, 0, 0, 0);*/
-	height: 96%;
-	background-color: #F4F4F4;
+	height: 90%;
+	background-color: #FFF;
 	margin-top: 1%;
-	margin-bottom: 60%;
-	padding-bottom: 0;
+	margin-bottom: 0%;
+	margin-left: 2%;
     float: left;
     overflow: hidden;
     text-align: center;
@@ -122,9 +124,9 @@
 
 .vertical-scroll img {
     transition: all 0.8s ease-in-out;
-    height: auto;
     position: relative;
-    padding-bottom: 13px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .vertical-scroll ul div:nth-of-type(1) img {
@@ -133,6 +135,7 @@
 
 .vertical-scroll ul div:nth-of-type(2) img {
     width: 63%;
+    height: 20%;
 }
 
 .vertical-scroll ul div:nth-of-type(3) img {
@@ -149,12 +152,18 @@
 
 
 .commentDiv {
-    width: 70%;
+    width: 56%;
     height: 100%;
-    background: transparent;
+    background-color: #FFF;
+	border-radius: 20px;
+	margin-top: 1%;
+	margin-left: 3%;
+	margin-right: 7%;
+	padding: 2%;
     float: left;
     overflow: hidden;
-}
+	position: relative;
+border-radius: 20px;border-radius: 20px;border-radius: 20px;border-radius: 20px;border-radius: 20px;border-radius: 20px;border-radius: 20px;border-radius: 20px;border-radius: 20px;}
 
 .commentDiv>p {
     height: 10%;
@@ -169,8 +178,9 @@
 .circleimg {
     border-radius: 50%;
     width: 50%;
+    height: 75%;
     margin-left: 50px;
-    margin-top: 30px;
+    margin-top: 0;
     float: left;
     background: transparent;
     position: relative;
@@ -248,7 +258,7 @@
 .bg2 {
     top: 0;
     left: 0;
-    background: aqua;
+    background: #FFF;
     opacity: 0.6;
 }
 .bg2 img{

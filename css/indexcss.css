@@ -235,7 +235,7 @@ img {
     height: 750px;
     margin-top: -750px;
     margin-left: 250px;
-    /*background: yellow;*/
+    background: transparent;
 }
 
 .moveText1 p {
@@ -244,6 +244,8 @@ img {
     margin-top: 100px;
     animation: moveText1Anime 1.5s;
     animation-fill-mode: forwards;
+    opacity: 0;
+    animation-delay: 1s;
 }
 
 @keyframes moveText1Anime {
@@ -265,7 +267,6 @@ img {
     margin-top: -500px;
     margin-left: 1000px;
     background: transparent;
-	/*background-color: aqua;*/
 }
 
 .moveText2 p {
@@ -274,6 +275,8 @@ img {
     margin-top: 100px;
     animation: moveText1Anime 1.5s;
     animation-fill-mode: forwards;
+    opacity: 0;
+    animation-delay: 1s;
 }
 
 @keyframes moveText2Anime {

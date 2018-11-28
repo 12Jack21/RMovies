@@ -35,25 +35,8 @@ jQuery(function () {
         });
 });
 
-// var sum1 = 0;
-// jQuery(function(){
-//     $("#n0").bind('mousewheel',function(event,delta){
-//         console.log(delta);
-//         sum+=delta;
-//         if(sum<=-3){
-//             $('html, body').animate({
-//                 // scrollTop: $($.attr(this, 'href')).offset().top
-//                 scrollTop: ($($.attr(this, 'href')).offset().top)
-//             }, 500);
-//         }
-//         return false;
-//     });
-// });
 
-jQuery(function(){
-    var myheight = window.innerHeight;
-    
-});
+
 
 console.log(document.documentElement.scrollTop);
 
@@ -63,14 +46,22 @@ $(".bg").css("height", window.innerHeight + "px");
 
 
 var mywidths = new Array("0", "33%", "63%", "90%", "63%", "33%", "0");
+var fullheight = window.innerHeight;
+var myheights = new Array(0,0.11,0.22,0.33,0.22,0.11,0);
+jQuery(function(){
+    for(var i = 1 ; i<= 5 ; i++){
+        $("#img" + i + " img").css("height", myheights[i]*fullheight+"px");
+    }
+});
+
 $("#img1").click(function () {
 
 });
 
-//只有两个区域能被点击后滚动图片，即 img2和img4的位置
 $("div").delegate("#img2", "click", function () {
     for (var i = 1; i <= 5; i++) {
         $("#img" + i + " img").css("width", mywidths[i + 1]);
+        $("#img" + i + " img").css("height", myheights[i+1]*fullheight+"px");
     }
 
     for (var i = 5; i >= 1; i--) {
@@ -78,9 +69,10 @@ $("div").delegate("#img2", "click", function () {
     }
 
     var imgsrc = $("#img6 img").attr("src");
-    $(".vertical-scroll ul").prepend('<div id="img1" style = "height:0"><a href="javascript:void(0)"><img src="' + imgsrc + '" alt="..." style="width: 0%;"></a></div>');
+    $(".vertical-scroll ul").prepend('<div id="img1" style = "height:0"><a href="javascript:void(0)"><img src="' + imgsrc + '" alt="..." style="width: 0px;height:0px"></a></div>');
     $("#img1").css("height", "auto");
     $("#img1 img").css("width", "33%");
+    $("#img1 img").css("height", 0.11*fullheight+"px");
 
     setTimeout(() => {
         $("#img6 img").remove();
@@ -94,6 +86,7 @@ $("#img3").click(function () {
 $("div").delegate("#img4", "click", function () {
     for (var i = 1; i <= 5; i++) {
         $("#img" + i + " img").css("width", mywidths[i - 1]);
+        $("#img" + i + " img").css("height",myheights[i-1]*fullheight+"px");
     }
 
     for (var i = 1; i <=5 ; i++) {
@@ -101,8 +94,9 @@ $("div").delegate("#img4", "click", function () {
     }
 
     var imgsrc = $("#img0 img").attr("src");
-    $(".vertical-scroll ul").append('<div id="img5"><a href="javascript:void(0)"><img src="' + imgsrc + '" alt="..." style="width: 0%;"></a></div>');
+    $(".vertical-scroll ul").append('<div id="img5"><a href="javascript:void(0)"><img src="' + imgsrc + '" alt="..." style="width: 0%;height:0"></a></div>');
     $("#img5 img").css("width", "33%");
+    $("#img5 img").css("height",0.11*fullheight+"px");
 
     setTimeout(() => {
         $("#img0 img").remove();
