@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>水形物语</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link href="../bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- <link href="../css/indexcss.css" rel="stylesheet"> -->
+    <link href="../css/contentcss.css" rel="stylesheet">
+    <script src="../bootstrap-3.3.7-dist/js/jquery-3.3.1.min.js"></script>
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="../bootstrap-3.3.7-dist/js/jquery.mousewheel.js"></script>
+    <style type="text/css">
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body p {
+            color: #000;
+        }
+
+        .bg {
+            display: table;
+            width: 100%;
+            height: 100%;
+            padding: 0 0;
+            left: 0;
+            color: #fff;
+            background: url(../image/contents/2_5/bg1.jpg) no-repeat bottom center;
+            background-color: #000;
+            background-size: cover;
+            animation: bgAnimation 2.5s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes bgAnimation {
+            0% {
+                opacity: 0;
+                background-size: 130%;
+            }
+
+            100% {
+                opacity: 1;
+                background-size: 100%;
+            }
+        }
+
+        .bgscroll {
+            float: left;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+
+<body id="type0" class="" style="background: #fff;">
+    <a href="../index.html">
+	<!--右下角返回主页栏-->
+    <div class="box">
+        <div class="bg2"><img src="../image/contents/home.png" alt="..." style="width: 100%"></div>
+        <div class="cover"><p>返回首页</p></div>
+    </div> </a>
+
+
+    <div class="bgscroll">
+        <div style="background: transparent" id="n0" class="panel">
+            <div class="bg" style="position:fixed;z-index: -1;"></div>
+            <div class="bg" style="background:transparent;position: relative;">
+                <!-- <div style="width: 8%;height: 10%;background: rgba(200, 200, 200, 0.5);left: 46%;top: 85%;position: absolute;">
+            <a href="#n1"><img src="../image/contents/down.png" alt="..." style="width: 80%;left: 10%;top:5%;position: absolute;"></a>
+        </div> -->
+                <div id="down" style="width: 8%;height: 10%;background: rgba(200, 200, 200, 0);left: 46%;top: 85%;position: absolute;z-index: 100">
+                    <a href="#n1" class="turnToContent">
+                        <canvas id="downCanvas" width="50" height="50" style="background: transparent;opacity: 0;">你的浏览器不支持canvas，请下载更新版本的浏览器
+                        </canvas>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bg panel" style="background: #F4F4F4;animation: none;margin-bottom: 0px;" id="n1">
+            <div style="margin-left: 10%;margin-top: 3%;width: 80%;background: transparent;height: 90%;overflow: hidden;">
+                <div style="float: left;width: 20%;background: transparent">
+                    <img src="../image/contents/2_5/poster.jpg" alt="..." class="img1" style="float: left;">
+                </div>
+                <div style="background: #F4FCFC;height: 48%;width: 80%;float: left;padding: 40px;overflow: hidden;border-radius: 20px;">
+                    <p style="font-size: 60px;margin-bottom: 40px">水形物语</p>
+                    <p style="font-size: 15px;margin-top: -30px">豆瓣评分：7.2&nbsp;&nbsp;&nbsp;IMDB评分：7.4&nbsp;&nbsp;&nbsp;时光网评分：7.6&nbsp;&nbsp;&nbsp;烂番茄新鲜度：91%</p>
+                    <p style="font-size: 18px">电影简介：</p>
+                    <p style="font-size: 17px;">故事发生在1963年，时值冷战期间，哑女艾丽莎（莎莉·霍金斯 Sally Hawkins 饰）在政府实验室里工作，是那里的一名清洁女工。年幼时，一场大病夺走了艾丽莎的声音，之后一直至今，她都在沉默之中过着形单影只的生活，全部的朋友就只有画家老头（尼克·西塞 Nick S earcy 饰）和同事塞尔达（奥克塔维亚·斯宾瑟 Octavia Spencer 饰）。</p>
+　　					<p style="font-size: 17px;">一天，实验室里拉响了高度戒备的警报，一个神秘的装满了水的罐子被送了进来，艾丽莎震惊的发现，罐子里关着一个半人半鱼的怪异生物。在理查德（迈克尔·珊农 Michael Shannon 饰）的带领下，科学家团队想要在这怪物身上提炼出能够制造生物武器的物质，可是在艾丽莎眼中，它不过是一个和自己一样的孤独的生命体。随着时间的推移，艾尔莎和怪物之间竟然产生了感情。
+					</p>
+                </div>
+				<!--演职员贴纸-->
+				<div style="background: #F4FCFC;float: left;margin-top: 20px;width:100%;border-radius: 20px;">
+					<div style="padding:35px;background: transparent;height: 85px;float: left;width: 100%">
+                    <p style="font-size: 25px">主要演职员：</p>
+                	</div>
+					<div style="width: 100%;height: 38%;overflow: hidden;background: transparent">
+                    <div class="scrollpic">
+                        <ul id="scrollx2" style="margin-left: -60px">
+                            <div id="scrollx">
+                                <li><img src="../image/contents/2_5/p1.jpg" alt="...">
+                                    <p>吉尔莫·德尔·托罗</p>
+                                    <p>导演</p>
+                                </li>
+                                <li><img src="../image/contents/2_5/p2.jpg" alt="...">
+                                    <p>莎莉·霍金斯</p>
+                                    <p>饰 艾丽莎·埃斯波西托</p>
+                                </li>
+                                <li><img src="../image/contents/2_5/p3.jpg" alt="...">
+                                    <p>道格·琼斯</p>
+                                    <p>饰 两栖人</p>
+                                </li>
+                                <li><img src="../image/contents/2_5/p4.jpg" alt="...">
+                                    <p>迈克尔·珊农</p>
+                                    <p>饰 理查德·斯特里克兰</p>
+                                </li>
+                                <li><img src="../image/contents/2_5/p5.jpg" alt="...">
+                                    <p>理查德·詹金斯</p>
+                                    <p>饰 吉尔斯</p>
+                                </li>
+                                <li><img src="../image/contents/2_5/p6.jpg" alt="...">
+                                    <p>奥克塔维亚·斯宾瑟</p>
+                                    <p>饰 泽尔达·富勒</p>
+                                </li>
+                            
+                            </div>
+                        </ul>
+                        <a href="javascript:void(0)" id="scrollToLeft">
+                            <div class="scroll-left">
+                                <img src="../image/contents/left.png" alt="...">
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" id="scrollToRight">
+                            <div class="scroll-right">
+                                <img src="../image/contents/right.png" alt="...">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+				</div>
+                
+
+                
+            </div>
+        </div>
+
+
+
+
+        <div class="bg panel" style="background: #ECECEC;animation: none;margin-bottom: 0px;left: 0;" id="n2">
+            <div class="vertical-scroll">
+                <ul>
+                    <div id="img1"><a href="javascript:void(0)1"><img src="../image/contents/2_5/img1.jpg" alt="..."></a></div>
+                    <div id="img2"> <a href="javascript:void(0)2"><img src="../image/contents/2_5/img2.jpg" alt="..."></a></div>
+                    <div id="img3"> <a href="javascript:void(0)3"><img src="../image/contents/2_5/img3.jpg" alt="..."></a></div>
+                    <div id="img4"> <a href="javascript:void(0)4"><img src="../image/contents/2_5/img4.jpg" alt="..."></a></div>
+                    <div id="img5"> <a href="javascript:void(0)5"><img src="../image/contents/2_5/img5.jpg" alt="..."></a></div>
+                </ul>
+            </div>
+            <div class="commentDiv">
+
+                <p>影评：</p>
+				<!--一个影评单元-->
+                <div style="background-color: #F4FCFC; width: 100%; height: 20%; margin: 10px; padding-top: 2%;paddin overflow: hidden;border-radius: 20px;">
+					<div style="background: transparent; float: right; ; width: 20%; height: 100%;">
+                        <img src="../image/contents/2_5/c4.jpg" class="circleimg">
+                    </div>
+                    <div style="width: 50%;height: 100%; float: right;">
+                        <p style="font-size: 20px;padding-left: 60px">The Shape of Water may be the most stunning film I have ever seen. Visually, it draws you in with gorgeous creature design and fascinating use of colors. The performances are absolutely outstanding, and the characters are fascinating.
+                       	</p>
+                    </div>
+                </div>
+
+                <div style="background-color: #F4FCFC; width: 100%; height: 20%; margin: 10px; padding-top: 2%; overflow: hidden;border-radius: 20px;">
+                    <div style="background: transparent;float: left;;width: 20%;height: 100%;">
+                        <img src="../image/contents/2_5/c1.png" class="circleimg">
+                    </div>
+                    <div style="width: 50%;height: 100%; float: left;">
+                        <p style="font-size: 20px;">是有多么童心未泯、浪漫至极的人，才能写出这样一个“所有的边缘人拥抱在一起就能对抗黑暗的世界”的故事呀，真的很难很难不被感动。鱼兽是个象征，他是个神秘生物，但更是一个代表着电影里出现的哑女、同志、黑人、女人的鲜活的人… 这样说来，角色脸谱化是难以避免了，但爱情实在是太美了，哭崩
+                        </p>
+                    </div>
+                </div>
+
+
+                <div style="background-color: #F4FCFC; width: 100%; height: 20%; margin: 10px; padding-top: 2%;paddin overflow: hidden;border-radius: 20px;">
+                    <div style="background: transparent; float: right; ; width: 20%; height: 100%;">
+                        <img src="../image/contents/2_5/c2.jpg" class="circleimg">
+                    </div>
+					<div style="width: 50%;height: 100%; float: right;">
+                        <p style="font-size: 20px;padding-left: 80px">考虑冷战时代设定，这是一部给大朋友们看的童话无疑了。女主角是个典型的灰姑娘，只不过遇见的是人鱼。斯宾瑟和詹金斯饰演的邻居和同事是灰姑娘的帮手，负责幽默。虽然略有惊悚元素，但轻松、有趣，歌舞黑白部分大赞，女主的情绪和装扮相当可爱，大反派最后遭遇让不少童心未泯的观众叫好。
+                        </p>
+                    </div>
+                    
+                </div>
+
+
+                <div style="background-color: #F4FCFC; width: 100%; height: 20%; margin: 10px; padding-top: 2%; overflow: hidden;border-radius: 20px;">
+                    <div style="background: transparent;float: left;;width: 20%;height: 100%;">
+                        <img src="../image/contents/2_5/c3.jpg" class="circleimg">
+                    </div>
+                    <div style="width: 50%;height: 100%; float: left;">
+                        <p style="font-size: 20px;">An enchanting re-imagining of "Beauty and the Beast," it is an unforgettably romantic, utterly sublime, dazzling phantasmagoria.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../js/content.js"></script>
+    <script src="../js/jquery.easing.1.3.js"></script>
+    <script src="../js/jquery.scrollify.js"></script>
+    <script>
+		
+        $(".bgscroll").css({
+            "height": window.innerHeight + "px"
+        });
+        $(function () {
+            $('.panel').css({
+                'height': $('.bgscroll').height()
+            });
+            $.scrollify({
+                section: '.panel',
+                target: '.bgscroll'
+
+            });
+        });
+        $('.panel').css({
+            'height': (window.innerHeight) + "px"
+        });
+    </script>
+
+</body>
+
+</html>
