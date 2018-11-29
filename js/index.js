@@ -6,7 +6,7 @@ $(window).scroll(function () {
         $(".navbar-fixed-top").removeClass("top-nav");
         // $(".navbar-fixed-top a").css("color","#000");
     }
-    for (var i = 1; i <= 4; i++) {
+    for (var i = 1; i <= 5; i++) {
         if (($(".navbar").offset().top + $(window).height()) > $("#title" + i).offset().top + 50) {
             $("#title" + i).addClass("move3");
         }
