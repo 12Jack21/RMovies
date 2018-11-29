@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>消失的爱人</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link href="../bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- <link href="../css/indexcss.css" rel="stylesheet"> -->
+    <link href="../css/contentcss.css" rel="stylesheet">
+    <script src="../bootstrap-3.3.7-dist/js/jquery-3.3.1.min.js"></script>
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="../bootstrap-3.3.7-dist/js/jquery.mousewheel.js"></script>
+    <style type="text/css">
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body p {
+            color: #000;
+        }
+
+        .bg {
+            display: table;
+            width: 100%;
+            height: 100%;
+            padding: 0 0;
+            left: 0;
+            color: #fff;
+            background: url(../image/contents/5_5/bg1.jpg) no-repeat bottom center;
+            background-color: #000;
+            background-size: cover;
+            animation: bgAnimation 2.5s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes bgAnimation {
+            0% {
+                opacity: 0;
+                background-size: 130%;
+            }
+
+            100% {
+                opacity: 1;
+                background-size: 100%;
+            }
+        }
+
+        .bgscroll {
+            float: left;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+
+<body id="type0" class="" style="background: #fff;">
+    <a href="../index.html">
+	<!--右下角返回主页栏-->
+    <div class="box">
+        <div class="bg2"><img src="../image/contents/home.png" alt="..." style="width: 100%"></div>
+        <div class="cover"><p>返回首页</p></div>
+    </div> </a>
+
+
+    <div class="bgscroll">
+        <div style="background: transparent" id="n0" class="panel">
+            <div class="bg" style="position:fixed;z-index: -1;"></div>
+            <div class="bg" style="background:transparent;position: relative;">
+                <!-- <div style="width: 8%;height: 10%;background: rgba(200, 200, 200, 0.5);left: 46%;top: 85%;position: absolute;">
+            <a href="#n1"><img src="../image/contents/down.png" alt="..." style="width: 80%;left: 10%;top:5%;position: absolute;"></a>
+        </div> -->
+                <div id="down" style="width: 8%;height: 10%;background: rgba(200, 200, 200, 0);left: 46%;top: 85%;position: absolute;z-index: 100">
+                    <a href="#n1" class="turnToContent">
+                        <canvas id="downCanvas" width="50" height="50" style="background: transparent;opacity: 0;">你的浏览器不支持canvas，请下载更新版本的浏览器
+                        </canvas>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bg panel" style="background: #F4F4F4;animation: none;margin-bottom: 0px;" id="n1">
+            <div style="margin-left: 10%;margin-top: 3%;width: 80%;background: transparent;height: 90%;overflow: hidden;">
+                <div style="float: left;width: 20%;background: transparent">
+                    <img src="../image/contents/5_5/poster.jpg" alt="..." class="img1" style="float: left;">
+                </div>
+                <div style="background: #F4FCFC;height: 48%;width: 80%;float: left;padding: 40px;overflow: hidden;border-radius: 20px;">
+                    <p style="font-size: 60px;margin-bottom: 20px">消失的爱人</p>
+                    <p style="font-size: 15px;margin-top: -30px">豆瓣评分:8.7</p>
+                    <p style="font-size: 18px">电影简介：</p>
+                    <p style="font-size: 16.5px;">结婚五周年纪念日的早上，尼克·邓恩（本·阿弗莱克 Ben Affleck 饰）来到妹妹玛戈（凯莉·库恩 Carrie Coon 饰）的酒吧，咒骂抱怨那个曾经彼此恩爱缠绵的妻子艾米（罗莎蒙德·派克 Rosamund Pike 饰）以及全然看不见希望的婚姻。当他返回家中时， 却发现客厅留下了暴行的痕迹，而妻子竟不见了踪影。
+
+                    </p>
+                    <p style="font-size: 16.5px;">女探员朗达·邦妮（金·迪肯斯 Kim Dickens 饰）接到报案后赶来调查，而现场留下的种种蛛丝马迹似乎昭示着这并非是一件寻常的失踪案，其背后或许隐藏着裂变于夫妻之情的谋杀罪行。艾米的失踪通过媒体大肆渲染和妄加揣测很快闻名全国，品行不端的尼克被推上风口浪尖，至今不见踪影的爱人对他进行无情审判，你侬我侬的甜言蜜语早已化作以血洗血的复仇与折磨…… 
+
+                    </p>
+                </div>
+				<!--演职员贴纸-->
+				<div style="background: #F4FCFC;float: left;margin-top: 20px;width:100%;border-radius: 20px;">
+					<div style="padding:35px;background: transparent;height: 85px;float: left;width: 100%">
+                    <p style="font-size: 25px">主要演职员：</p>
+                	</div>
+					<div style="width: 100%;height: 38%;overflow: hidden;background: transparent">
+                    <div class="scrollpic">
+                        <ul id="scrollx2" style="margin-left: -60px">
+                            <div id="scrollx">
+                                <li><img src="../image/contents/5_5/p1.jpg" alt="...">
+                                    <p>大卫·芬奇</p>
+                                    <p>导演</p>
+                                </li>
+                                <li><img src="../image/contents/5_5/p2.jpg" alt="...">
+                                    <p>本·阿弗莱克 </p>
+                                    <p>演员</p>
+                                </li>
+                                <li><img src="../image/contents/5_5/p3.jpg" alt="...">
+                                    <p>裴淳华</p>
+                                    <p>饰演蝙蝠侠</p>
+                                </li>
+                                <li><img src="../image/contents/5_5/p4.jpg" alt="...">
+                                    <p>尼尔·帕特里克·哈里斯</p>
+                                    <p>演员</p>
+                                </li>
+                                <li><img src="../image/contents/5_5/p5.jpg" alt="...">
+                                    <p>凯莉·库恩 </p>
+                                    <p>演员</p>
+                                </li>
+								<li><img src="../image/contents/5_5/p6.jpg" alt="...">
+                                    <p>泰勒·派瑞 </p>
+                                    <p>演员</p>
+                                </li>
+                            </div>
+                        </ul>
+                        <a href="javascript:void(0)" id="scrollToLeft">
+                            <div class="scroll-left">
+                                <img src="../image/contents/left.png" alt="...">
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" id="scrollToRight">
+                            <div class="scroll-right">
+                                <img src="../image/contents/right.png" alt="...">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+				</div>
+                
+
+                
+            </div>
+        </div>
+
+
+
+
+        <div class="bg panel" style="background: #ECECEC;animation: none;margin-bottom: 0px;left: 0;" id="n2">
+            <div class="vertical-scroll">
+                <ul>
+                    <div id="img1"><a href="javascript:void(0)1"><img src="../image/contents/5_5/img1.jpg" alt="..."></a></div>
+                    <div id="img2"> <a href="javascript:void(0)2"><img src="../image/contents/5_5/img2.jpg" alt="..."></a></div>
+                    <div id="img3"> <a href="javascript:void(0)3"><img src="../image/contents/5_5/img3.jpg" alt="..."></a></div>
+                    <div id="img4"> <a href="javascript:void(0)4"><img src="../image/contents/5_5/img4.jpg" alt="..."></a></div>
+                    <div id="img5"> <a href="javascript:void(0)5"><img src="../image/contents/5_5/img5.jpg" alt="..."></a></div>
+                </ul>
+            </div>
+            <div class="commentDiv">
+
+                <p>影评：</p>
+				<!--一个影评单元-->
+                <div style="background-color: #F4FCFC; width: 100%; height: 20%; margin: 10px; padding-top: 2%;paddin overflow: hidden;border-radius: 20px;">
+					<div style="background: transparent; float: right; ; width: 20%; height: 100%;">
+                        <img src="../image/contents/5_5/c1.jpg" class="circleimg">
+                    </div>
+                    <div style="width: 50%;height: 100%; float: right;">
+                        <p style="font-size: 20px;padding-left: 60px">酷到不需要朋友。一个狗咬狗的故事，没有人是无辜的。喜欢男主问为什么我们要毁掉对方互相伤害的时候女主面无表情的答因为这就是婚姻。结局啊结局，我原本以为两个人中终究会有一个杀掉另一个，没想到是一个更加恐怖的结局。
+                       	</p>
+                    </div>
+                </div>
+
+                <div style="background-color: #F4FCFC; width: 100%; height: 20%; margin: 10px; padding-top: 2%; overflow: hidden;border-radius: 20px;">
+                    <div style="background: transparent;float: left;;width: 20%;height: 100%;">
+                        <img src="../image/contents/5_5/c2.jpg" class="circleimg">
+                    </div>
+                    <div style="width: 50%;height: 100%; float: left;">
+                        <p style="font-size: 20px;">在大卫芬奇老师的世界里，他似乎永远充满了对人性和媒体的不屑甚至是鄙夷。这无比崩坏的三观构建和血淋淋弑杀场面简直是要挑战观众的心理和生理耐受度.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div style="background-color: #F4FCFC; width: 100%; height: 20%; margin: 10px; padding-top: 2%;paddin overflow: hidden;border-radius: 20px;">
+                    <div style="background: transparent; float: right; ; width: 20%; height: 100%;">
+                        <img src="../image/contents/5_5/c3.jpg" class="circleimg">
+                    </div>
+					<div style="width: 50%;height: 100%; float: right;">
+                        <p style="font-size: 20px;padding-left: 80px">Fincher is as Fincher does. And what Fincher does better than almost anyone is create moody, meticulously crafted thrillers that straddle the divide between genre and art.
+                    </div>
+                    
+                </div>
+				<div style="background-color: #F4FCFC; width: 100%; height: 20%; margin: 10px; padding-top: 2%; overflow: hidden;border-radius: 20px;">
+                    <div style="background: transparent;float: left;;width: 20%;height: 100%;">
+                        <img src="../image/contents/5_5/c4.jpg" class="circleimg">
+                    </div>
+                    <div style="width: 50%;height: 100%; float: left;">
+                        <p style="font-size: 20px;">If you've read the book, go see the movie. If you haven't read the book still go. You'll be captivated as you try to figure out who's telling the truth and what really happened.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../js/content.js"></script>
+    <script src="../js/jquery.easing.1.3.js"></script>
+    <script src="../js/jquery.scrollify.js"></script>
+    <script>
+		
+        $(".bgscroll").css({
+            "height": window.innerHeight + "px"
+        });
+        $(function () {
+            $('.panel').css({
+                'height': $('.bgscroll').height()
+            });
+            $.scrollify({
+                section: '.panel',
+                target: '.bgscroll'
+
+            });
+        });
+        $('.panel').css({
+            'height': (window.innerHeight) + "px"
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>无敌破坏王2</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link href="../bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- <link href="../css/indexcss.css" rel="stylesheet"> -->
+    <link href="../css/contentcss.css" rel="stylesheet">
+    <script src="../bootstrap-3.3.7-dist/js/jquery-3.3.1.min.js"></script>
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="../bootstrap-3.3.7-dist/js/jquery.mousewheel.js"></script>
+    <style type="text/css">
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body p {
+            color: #000;
+        }
+
+        .bg {
+            display: table;
+            width: 100%;
+            height: 100%;
+            padding: 0 0;
+            left: 0;
+            color: #fff;
+            background: url(../image/contents/4_5/bg1.jpg) no-repeat bottom center;
+            background-color: #000;
+            background-size: cover;
+            animation: bgAnimation 2.5s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes bgAnimation {
+            0% {
+                opacity: 0;
+                background-size: 130%;
+            }
+
+            100% {
+                opacity: 1;
+                background-size: 100%;
+            }
+        }
+
+        .bgscroll {
+            float: left;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+
+<body id="type0" class="" style="background: #fff;">
+    <a href="../index.html">
+	<!--右下角返回主页栏-->
+    <div class="box">
+        <div class="bg2"><img src="../image/contents/home.png" alt="..." style="width: 100%"></div>
+        <div class="cover"><p>返回首页</p></div>
+    </div> </a>
+
+
+    <div class="bgscroll">
+        <div style="background: transparent" id="n0" class="panel">
+            <div class="bg" style="position:fixed;z-index: -1;"></div>
+            <div class="bg" style="background:transparent;position: relative;">
+                <!-- <div style="width: 8%;height: 10%;background: rgba(200, 200, 200, 0.5);left: 46%;top: 85%;position: absolute;">
+            <a href="#n1"><img src="../image/contents/down.png" alt="..." style="width: 80%;left: 10%;top:5%;position: absolute;"></a>
+        </div> -->
+                <div id="down" style="width: 8%;height: 10%;background: rgba(200, 200, 200, 0);left: 46%;top: 85%;position: absolute;z-index: 100">
+                    <a href="#n1" class="turnToContent">
+                        <canvas id="downCanvas" width="50" height="50" style="background: transparent;opacity: 0;">你的浏览器不支持canvas，请下载更新版本的浏览器
+                        </canvas>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bg panel" style="background: #F4F4F4;animation: none;margin-bottom: 0px;" id="n1">
+            <div style="margin-left: 10%;margin-top: 3%;width: 80%;background: transparent;height: 90%;overflow: hidden;">
+                <div style="float: left;width: 20%;background: transparent">
+                    <img src="../image/contents/4_5/poster.jpg" alt="..." class="img1" style="float: left;">
+                </div>
+                <div style="background: #F4FCFC;height: 48%;width: 80%;float: left;padding: 40px;overflow: hidden;border-radius: 20px;">
+                    <p style="font-size: 60px;margin-bottom: 20px">无敌破坏王2</p>
+                    <p style="font-size: 15px;margin-top: -30px">豆瓣评分:8.4</p>
+                    <p style="font-size: 18px">电影简介：</p>
+                    <p style="font-size: 16.5px;">　《无敌破坏王2：大闹互联网》从电玩世界来到了广阔、未知又激动人心的虚拟网络世界，而互联网世界能否经得住破坏？电玩游戏破坏王拉尔夫和调皮女孩云妮洛普冒险前往未知的网络世界，寻找可以修复《甜蜜冲刺》游戏的组件。
+
+
+                    </p>
+                    <p style="font-size: 16.5px;">  他们需要在网民们的帮助下在网络世界中不断前行，在这过程中他们遇到了热门网站BuzzzTube的核心人物——充满企业家精神的耶丝小姐。
+                    </p>
+                </div>
+				<!--演职员贴纸-->
+				<div style="background: #F4FCFC;float: left;margin-top: 20px;width:100%;border-radius: 20px;">
+					<div style="padding:35px;background: transparent;height: 85px;float: left;width: 100%">
+                    <p style="font-size: 25px">主要演职员：</p>
+                	</div>
+					<div style="width: 100%;height: 38%;overflow: hidden;background: transparent">
+                    <div class="scrollpic">
+                        <ul id="scrollx2" style="margin-left: -60px">
+                            <div id="scrollx">
+                                <li><img src="../image/contents/4_5/p1.jpg" alt="...">
+                                    <p>菲尔·约翰斯顿</p>
+                                    <p>导演</p>
+                                </li>
+                                <li><img src="../image/contents/4_5/p2.jpg" alt="...">
+                                    <p>瑞奇·摩尔 </p>
+                                    <p>演员</p>
+                                </li>
+                                <li><img src="../image/contents/4_5/p3.jpg" alt="...">
+                                    <p>约翰·C·赖利</p>
+                                    <p>演员</p>
+                                </li>
+                                <li><img src="../image/contents/4_5/p4.jpg" alt="...">
+                                    <p>萨拉·西尔弗曼</p>
+                                    <p>演员</p>
+                                </li>
+                                <li><img src="../image/contents/4_5/p5.jpg" alt="...">
+                                    <p>盖尔·加朵 </p>
+                                    <p>演员</p>
+                                </li>
+								<li><img src="../image/contents/4_5/p6.jpg" alt="...">
+                                    <p>塔拉吉·P·汉森 </p>
+                                    <p>演员</p>
+                                </li>
+                            </div>
+                        </ul>
+                        <a href="javascript:void(0)" id="scrollToLeft">
+                            <div class="scroll-left">
+                                <img src="../image/contents/left.png" alt="...">
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" id="scrollToRight">
+                            <div class="scroll-right">
+                                <img src="../image/contents/right.png" alt="...">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+				</div>
+                
+
+                
+            </div>
+        </div>
+
+
+
+
+        <div class="bg panel" style="background: #ECECEC;animation: none;margin-bottom: 0px;left: 0;" id="n2">
+            <div class="vertical-scroll">
+                <ul>
+                    <div id="img1"><a href="javascript:void(0)1"><img src="../image/contents/4_5/img1.jpg" alt="..."></a></div>
+                    <div id="img2"> <a href="javascript:void(0)2"><img src="../image/contents/4_5/img2.jpg" alt="..."></a></div>
+                    <div id="img3"> <a href="javascript:void(0)3"><img src="../image/contents/4_5/img3.jpg" alt="..."></a></div>
+                    <div id="img4"> <a href="javascript:void(0)4"><img src="../image/contents/4_5/img4.jpg" alt="..."></a></div>
+                    <div id="img5"> <a href="javascript:void(0)5"><img src="../image/contents/4_5/img5.jpg" alt="..."></a></div>
+                </ul>
+            </div>
+            <div class="commentDiv">
+
+                <p>影评：</p>
+				<!--一个影评单元-->
+                <div style="background-color: #F4FCFC; width: 100%; height: 20%; margin: 10px; padding-top: 2%;paddin overflow: hidden;border-radius: 20px;">
+					<div style="background: transparent; float: right; ; width: 20%; height: 100%;">
+                        <img src="../image/contents/4_5/c1.jpg" class="circleimg">
+                    </div>
+                    <div style="width: 50%;height: 100%; float: right;">
+                        <p style="font-size: 20px;padding-left: 60px">如果说六年前的《无敌破坏王》将观众带回到了80年代的游戏世界，那么这部《无敌破坏王2》则无疑则会令成长于互联网时代90后乃至00后年轻观众们更佳具有共鸣。。
+                       	</p>
+                    </div>
+                </div>
+
+                <div style="background-color: #F4FCFC; width: 100%; height: 20%; margin: 10px; padding-top: 2%; overflow: hidden;border-radius: 20px;">
+                    <div style="background: transparent;float: left;;width: 20%;height: 100%;">
+                        <img src="../image/contents/4_5/c2.jpg" class="circleimg">
+                    </div>
+                    <div style="width: 50%;height: 100%; float: left;">
+                        <p style="font-size: 20px;">“迪士尼在本片中展现出了前所未有的自黑精神，将自己以往影片尤其是公主电影里的诸多设定拿来大加调侃。 某种意义上说，这部影片成功给迪士尼公主们树立了更符合时代的崭新女性形象。
+                        </p>
+                    </div>
+                </div>
+
+
+                <div style="background-color: #F4FCFC; width: 100%; height: 20%; margin: 10px; padding-top: 2%;paddin overflow: hidden;border-radius: 20px;">
+                    <div style="background: transparent; float: right; ; width: 20%; height: 100%;">
+                        <img src="../image/contents/4_5/c3.jpg" class="circleimg">
+                    </div>
+					<div style="width: 50%;height: 100%; float: right;">
+                        <p style="font-size: 20px;padding-left: 80px">Ralph Breaks the Internet is, without a doubt, the best film made about the lives of computer programs since the Wachowskis' Matrix sequels; I mean this as a glowing compliment.
+                        </p>
+                    </div>
+                    
+                </div>
+				
+				<div style="background-color: #F4FCFC; width: 100%; height: 20%; margin: 10px; padding-top: 2%; overflow: hidden;border-radius: 20px;">
+                    <div style="background: transparent;float: left;;width: 20%;height: 100%;">
+                        <img src="../image/contents/4_5/c4.jpg" class="circleimg">
+                    </div>
+                    <div style="width: 50%;height: 100%; float: left;">
+                        <p style="font-size: 20px;">Fear not, because as much fun as Wreck-It Ralph is, there's no doubt that Ralph Breaks the Internet is better - smarter, funnier, and with a message that resonates for kids and adults alike.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../js/content.js"></script>
+    <script src="../js/jquery.easing.1.3.js"></script>
+    <script src="../js/jquery.scrollify.js"></script>
+    <script>
+		
+        $(".bgscroll").css({
+            "height": window.innerHeight + "px"
+        });
+        $(function () {
+            $('.panel').css({
+                'height': $('.bgscroll').height()
+            });
+            $.scrollify({
+                section: '.panel',
+                target: '.bgscroll'
+
+            });
+        });
+        $('.panel').css({
+            'height': (window.innerHeight) + "px"
+        });
+    </script>
+
+</body>
+
+</html>

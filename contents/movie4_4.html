@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>我不是药神</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link href="../bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- <link href="../css/indexcss.css" rel="stylesheet"> -->
+    <link href="../css/contentcss.css" rel="stylesheet">
+    <script src="../bootstrap-3.3.7-dist/js/jquery-3.3.1.min.js"></script>
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="../bootstrap-3.3.7-dist/js/jquery.mousewheel.js"></script>
+    <style type="text/css">
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body p {
+            color: #000;
+        }
+
+        .bg {
+            display: table;
+            width: 100%;
+            height: 100%;
+            padding: 0 0;
+            left: 0;
+            color: #fff;
+            background: url(../image/contents/4_4/bg1.jpg) no-repeat bottom center;
+            background-color: #000;
+            background-size: cover;
+            animation: bgAnimation 2.5s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes bgAnimation {
+            0% {
+                opacity: 0;
+                background-size: 130%;
+            }
+
+            100% {
+                opacity: 1;
+                background-size: 100%;
+            }
+        }
+
+        .bgscroll {
+            float: left;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+
+<body id="type0" class="" style="background: #fff;">
+    <a href="../index.html">
+	<!--右下角返回主页栏-->
+    <div class="box">
+        <div class="bg2"><img src="../image/contents/home.png" alt="..." style="width: 100%"></div>
+        <div class="cover"><p>返回首页</p></div>
+    </div> </a>
+
+
+    <div class="bgscroll">
+        <div style="background: transparent" id="n0" class="panel">
+            <div class="bg" style="position:fixed;z-index: -1;"></div>
+            <div class="bg" style="background:transparent;position: relative;">
+                <!-- <div style="width: 8%;height: 10%;background: rgba(200, 200, 200, 0.5);left: 46%;top: 85%;position: absolute;">
+            <a href="#n1"><img src="../image/contents/down.png" alt="..." style="width: 80%;left: 10%;top:5%;position: absolute;"></a>
+        </div> -->
+                <div id="down" style="width: 8%;height: 10%;background: rgba(200, 200, 200, 0);left: 46%;top: 85%;position: absolute;z-index: 100">
+                    <a href="#n1" class="turnToContent">
+                        <canvas id="downCanvas" width="50" height="50" style="background: transparent;opacity: 0;">你的浏览器不支持canvas，请下载更新版本的浏览器
+                        </canvas>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bg panel" style="background: #F4F4F4;animation: none;margin-bottom: 0px;" id="n1">
+            <div style="margin-left: 10%;margin-top: 3%;width: 80%;background: transparent;height: 90%;overflow: hidden;">
+                <div style="float: left;width: 20%;background: transparent">
+                    <img src="../image/contents/4_4/poster.jpg" alt="..." class="img1" style="float: left;">
+                </div>
+                <div style="background: #F4FCFC;height: 48%;width: 80%;float: left;padding: 40px;overflow: hidden;border-radius: 20px;">
+                    <p style="font-size: 60px;margin-bottom: 20px">我不是药神</p>
+                    <p style="font-size: 15px;margin-top: -30px">豆瓣评分:9.0</p>
+                    <p style="font-size: 18px">电影简介：</p>
+                    <p style="font-size: 16.5px;">　普通中年男子程勇（徐峥 饰）经营着一家保健品店，失意又失婚。不速之客吕受益（王传君 饰）的到来，让他开辟了一条去印度买药做“代购”的新事业，虽然困难重重，但他在这条“买药之路”上发现了商机，一发不可收拾地做起了治疗慢粒白血病的印度仿制药独家代理商。
+
+
+                    </p>
+                    <p style="font-size: 16.5px;">赚钱的同时，他也认识了几个病患及家属，为救女儿被迫做舞女的思慧（谭卓 饰）、说一口流利“神父腔”英语的刘牧师（杨新鸣 饰），以及脾气暴烈的“黄毛”（章宇 饰），几个人合伙做起了生意，利润倍增的同时也危机四伏。程勇昔日的小舅子曹警官（周一围 饰）奉命调查仿制药的源头，假药贩子张长林（王砚辉 饰）和瑞士正牌医药代表（李乃文 饰）也对其虎视眈眈，生意逐渐变成了一场关于救赎的拉锯战。 
+
+                    </p>
+                </div>
+				<!--演职员贴纸-->
+				<div style="background: #F4FCFC;float: left;margin-top: 20px;width:100%;border-radius: 20px;">
+					<div style="padding:35px;background: transparent;height: 85px;float: left;width: 100%">
+                    <p style="font-size: 25px">主要演职员：</p>
+                	</div>
+					<div style="width: 100%;height: 38%;overflow: hidden;background: transparent">
+                    <div class="scrollpic">
+                        <ul id="scrollx2" style="margin-left: -60px">
+                            <div id="scrollx">
+                                <li><img src="../image/contents/4_4/p1.jpeg" alt="...">
+                                    <p>文牧野</p>
+                                    <p>导演</p>
+                                </li>
+                                <li><img src="../image/contents/4_4/p2.jpg" alt="...">
+                                    <p>徐峥 </p>
+                                    <p>演员</p>
+                                </li>
+                                <li><img src="../image/contents/4_4/p3.jpg" alt="...">
+                                    <p>王传君</p>
+                                    <p>饰演蝙蝠侠</p>
+                                </li>
+                                <li><img src="../image/contents/4_4/p4.jpeg" alt="...">
+                                    <p>周一围</p>
+                                    <p>演员</p>
+                                </li>
+                                <li><img src="../image/contents/4_4/p5.jpg" alt="...">
+                                    <p>谭卓 </p>
+                                    <p>演员</p>
+                                </li>
+								<li><img src="../image/contents/4_4/p6.jpeg" alt="...">
+                                    <p>章宇 </p>
+                                    <p>演员</p>
+                                </li>
+                            </div>
+                        </ul>
+                        <a href="javascript:void(0)" id="scrollToLeft">
+                            <div class="scroll-left">
+                                <img src="../image/contents/left.png" alt="...">
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" id="scrollToRight">
+                            <div class="scroll-right">
+                                <img src="../image/contents/right.png" alt="...">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+				</div>
+                
+
+                
+            </div>
+        </div>
+
+
+
+
+        <div class="bg panel" style="background: #ECECEC;animation: none;margin-bottom: 0px;left: 0;" id="n2">
+            <div class="vertical-scroll">
+                <ul>
+                    <div id="img1"><a href="javascript:void(0)1"><img src="../image/contents/4_4/img1.jpg" alt="..."></a></div>
+                    <div id="img2"> <a href="javascript:void(0)2"><img src="../image/contents/4_4/img2.jpg" alt="..."></a></div>
+                    <div id="img3"> <a href="javascript:void(0)3"><img src="../image/contents/4_4/img3.jpg" alt="..."></a></div>
+                    <div id="img4"> <a href="javascript:void(0)4"><img src="../image/contents/4_4/img4.jpg" alt="..."></a></div>
+                    <div id="img5"> <a href="javascript:void(0)5"><img src="../image/contents/4_4/img5.jpg" alt="..."></a></div>
+                </ul>
+            </div>
+            <div class="commentDiv">
+
+                <p>影评：</p>
+				<!--一个影评单元-->
+                <div style="background-color: #F4FCFC; width: 100%; height: 20%; margin: 10px; padding-top: 2%;paddin overflow: hidden;border-radius: 20px;">
+					<div style="background: transparent; float: right; ; width: 20%; height: 100%;">
+                        <img src="../image/contents/4_4/c1.jpg" class="circleimg">
+                    </div>
+                    <div style="width: 50%;height: 100%; float: right;">
+                        <p style="font-size: 20px;padding-left: 60px">“你敢保证你一辈子不得病？”纯粹、直接、有力！常常感叹：电影只能是电影。但每看到这样的佳作，又感慨：电影不只是电影！由衷的希望这部电影大卖！成为话题！成为榜样！成为国产电影最该有的可能。
+                       	</p>
+                    </div>
+                </div>
+
+                <div style="background-color: #F4FCFC; width: 100%; height: 20%; margin: 10px; padding-top: 2%; overflow: hidden;border-radius: 20px;">
+                    <div style="background: transparent;float: left;;width: 20%;height: 100%;">
+                        <img src="../image/contents/4_4/c2.jpg" class="circleimg">
+                    </div>
+                    <div style="width: 50%;height: 100%; float: left;">
+                        <p style="font-size: 20px;">文牧野眼睛太毒了，观众的笑点、泪点、痛点被他牢牢抓住，徐峥现在不拼演技开始掏心炸肺放脱自我了，药物在中国绝对是个“不可说”，但这个电影说了它能说的，也不显山不漏水的说了它所不能说的，讲的是现实，但看过电影之后才会明白其实是超现实，2018最佳!
+                        </p>
+                    </div>
+                </div>
+
+
+                <div style="background-color: #F4FCFC; width: 100%; height: 20%; margin: 10px; padding-top: 2%;paddin overflow: hidden;border-radius: 20px;">
+                    <div style="background: transparent; float: right; ; width: 20%; height: 100%;">
+                        <img src="../image/contents/4_4/c3.jpg" class="circleimg">
+                    </div>
+					<div style="width: 50%;height: 100%; float: right;">
+                        <p style="font-size: 20px;padding-left: 80px">A good movie. Some clever parts and an unusual set of characters make for a good watch. I recommend this movie. Some cliché parts but it's based on a true story so fair enough. 
+                        </p>
+                    </div>
+                    
+                </div>
+				
+				<div style="background-color: #F4FCFC; width: 100%; height: 20%; margin: 10px; padding-top: 2%; overflow: hidden;border-radius: 20px;">
+                    <div style="background: transparent;float: left;;width: 20%;height: 100%;">
+                        <img src="../image/contents/4_4/c4.jpg" class="circleimg">
+                    </div>
+                    <div style="width: 50%;height: 100%; float: left;">
+                        <p style="font-size: 20px;">确实是近年来少有的国产好片，各种人物关系交织，剧情也是无时无刻提醒着我“艺术源于生活”。我觉得都不应该去讨论药贵不贵的问题，而是关注源头。前有《达拉斯买家俱乐部》后有《我不是药神》，“药效”都一样.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../js/content.js"></script>
+    <script src="../js/jquery.easing.1.3.js"></script>
+    <script src="../js/jquery.scrollify.js"></script>
+    <script>
+		
+        $(".bgscroll").css({
+            "height": window.innerHeight + "px"
+        });
+        $(function () {
+            $('.panel').css({
+                'height': $('.bgscroll').height()
+            });
+            $.scrollify({
+                section: '.panel',
+                target: '.bgscroll'
+
+            });
+        });
+        $('.panel').css({
+            'height': (window.innerHeight) + "px"
+        });
+    </script>
+
+</body>
+
+</html>

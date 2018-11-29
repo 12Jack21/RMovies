@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>致命魔术</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link href="../bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- <link href="../css/indexcss.css" rel="stylesheet"> -->
+    <link href="../css/contentcss.css" rel="stylesheet">
+    <script src="../bootstrap-3.3.7-dist/js/jquery-3.3.1.min.js"></script>
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="../bootstrap-3.3.7-dist/js/jquery.mousewheel.js"></script>
+    <style type="text/css">
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body p {
+            color: #000;
+        }
+
+        .bg {
+            display: table;
+            width: 100%;
+            height: 100%;
+            padding: 0 0;
+            left: 0;
+            color: #fff;
+            background: url(../image/contents/5_6/bg1.jpg) no-repeat bottom center;
+            background-color: #000;
+            background-size: cover;
+            animation: bgAnimation 2.5s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes bgAnimation {
+            0% {
+                opacity: 0;
+                background-size: 130%;
+            }
+
+            100% {
+                opacity: 1;
+                background-size: 100%;
+            }
+        }
+
+        .bgscroll {
+            float: left;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+
+<body id="type0" class="" style="background: #fff;">
+    <a href="../index.html">
+	<!--右下角返回主页栏-->
+    <div class="box">
+        <div class="bg2"><img src="../image/contents/home.png" alt="..." style="width: 100%"></div>
+        <div class="cover"><p>返回首页</p></div>
+    </div> </a>
+
+
+    <div class="bgscroll">
+        <div style="background: transparent" id="n0" class="panel">
+            <div class="bg" style="position:fixed;z-index: -1;"></div>
+            <div class="bg" style="background:transparent;position: relative;">
+                <!-- <div style="width: 8%;height: 10%;background: rgba(200, 200, 200, 0.5);left: 46%;top: 85%;position: absolute;">
+            <a href="#n1"><img src="../image/contents/down.png" alt="..." style="width: 80%;left: 10%;top:5%;position: absolute;"></a>
+        </div> -->
+                <div id="down" style="width: 8%;height: 10%;background: rgba(200, 200, 200, 0);left: 46%;top: 85%;position: absolute;z-index: 100">
+                    <a href="#n1" class="turnToContent">
+                        <canvas id="downCanvas" width="50" height="50" style="background: transparent;opacity: 0;">你的浏览器不支持canvas，请下载更新版本的浏览器
+                        </canvas>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bg panel" style="background: #F4F4F4;animation: none;margin-bottom: 0px;" id="n1">
+            <div style="margin-left: 10%;margin-top: 3%;width: 80%;background: transparent;height: 90%;overflow: hidden;">
+                <div style="float: left;width: 20%;background: transparent">
+                    <img src="../image/contents/5_6/poster.jpg" alt="..." class="img1" style="float: left;">
+                </div>
+                <div style="background: #F4FCFC;height: 48%;width: 80%;float: left;padding: 40px;overflow: hidden;border-radius: 20px;">
+                    <p style="font-size: 60px;margin-bottom: 20px">致命魔术</p>
+                    <p style="font-size: 15px;margin-top: -30px">豆瓣评分:8.8</p>
+                    <p style="font-size: 18px">电影简介：</p>
+                    <p style="font-size: 16.5px;">19世纪末，人们对科学文明还不是认识得太过清楚，于是，安吉尔（休•杰克曼Hugh Jackman饰）和伯登（克里斯蒂安•贝尔Christian Bale饰）的魔术，成为了伦敦城内的神奇人物。安吉尔出身贵族，魔术手段华丽丰富，是富人圈子里的表演常客。而伯登即使出身平平，争强好胜的心智和充满创造力的魔术技巧，却也令他有了名气。两人自小本是要好的伙伴，然而，现在魔术界二人各有领地，并且都有野心想成为音乐大厅里的顶级魔术师，一番明争暗斗如箭在弦上。 
+
+                    </p>
+                    <p style="font-size: 16.5px;">伯登掌握了精彩的分身术，叫座又叫好。而安吉尔见情势不妙，搬来科学家助阵——他发明的交流电有无穷魔力，保证让观众目瞪口呆。二人出招接招，一来一往，争斗在剧烈升级，友谊和道德都被抛诸脑后，一场血案在悄悄酝酿。
+
+                    </p>
+                </div>
+				<!--演职员贴纸-->
+				<div style="background: #F4FCFC;float: left;margin-top: 20px;width:100%;border-radius: 20px;">
+					<div style="padding:35px;background: transparent;height: 85px;float: left;width: 100%">
+                    <p style="font-size: 25px">主要演职员：</p>
+                	</div>
+					<div style="width: 100%;height: 38%;overflow: hidden;background: transparent">
+                    <div class="scrollpic">
+                        <ul id="scrollx2" style="margin-left: -60px">
+                            <div id="scrollx">
+                                <li><img src="../image/contents/5_6/p1.jpg" alt="...">
+                                    <p>克里斯托弗·诺兰</p>
+                                    <p>导演</p>
+                                </li>
+                                <li><img src="../image/contents/5_6/p2.jpg" alt="...">
+                                    <p>休·杰克曼 </p>
+                                    <p>演员</p>
+                                </li>
+                                <li><img src="../image/contents/5_6/p3.jpg" alt="...">
+                                    <p>克里斯蒂安·贝尔</p>
+                                    <p>饰演蝙蝠侠</p>
+                                </li>
+                                <li><img src="../image/contents/5_6/p4.jpg" alt="...">
+                                    <p>迈克尔·凯恩</p>
+                                    <p>演员</p>
+                                </li>
+                                <li><img src="../image/contents/5_6/p5.jpg" alt="...">
+                                    <p>丽贝卡·豪尔 </p>
+                                    <p>演员</p>
+                                </li>
+								<li><img src="../image/contents/5_6/p6.jpg" alt="...">
+                                    <p>斯嘉丽·约翰逊 </p>
+                                    <p>演员</p>
+                                </li>
+                            </div>
+                        </ul>
+                        <a href="javascript:void(0)" id="scrollToLeft">
+                            <div class="scroll-left">
+                                <img src="../image/contents/left.png" alt="...">
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" id="scrollToRight">
+                            <div class="scroll-right">
+                                <img src="../image/contents/right.png" alt="...">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+				</div>
+                
+
+                
+            </div>
+        </div>
+
+
+
+
+        <div class="bg panel" style="background: #ECECEC;animation: none;margin-bottom: 0px;left: 0;" id="n2">
+            <div class="vertical-scroll">
+                <ul>
+                    <div id="img1"><a href="javascript:void(0)1"><img src="../image/contents/5_6/img1.jpg" alt="..."></a></div>
+                    <div id="img2"> <a href="javascript:void(0)2"><img src="../image/contents/5_6/img2.jpg" alt="..."></a></div>
+                    <div id="img3"> <a href="javascript:void(0)3"><img src="../image/contents/5_6/img3.jpg" alt="..."></a></div>
+                    <div id="img4"> <a href="javascript:void(0)4"><img src="../image/contents/5_6/img4.jpg" alt="..."></a></div>
+                    <div id="img5"> <a href="javascript:void(0)5"><img src="../image/contents/5_6/img5.jpg" alt="..."></a></div>
+                </ul>
+            </div>
+            <div class="commentDiv">
+
+                <p>影评：</p>
+				<!--一个影评单元-->
+                <div style="background-color: #F4FCFC; width: 100%; height: 20%; margin: 10px; padding-top: 2%;paddin overflow: hidden;border-radius: 20px;">
+					<div style="background: transparent; float: right; ; width: 20%; height: 100%;">
+                        <img src="../image/contents/5_6/c1.jpg" class="circleimg">
+                    </div>
+                    <div style="width: 50%;height: 100%; float: right;">
+                        <p style="font-size: 20px;padding-left: 60px">诺兰的优点之一是，他从不回避难以讲述的故事。你可能会认为电影是一种欺骗和故作高深。如果你是以肤浅的心态观看它，那就是。但是如果你真的深入到故事的各个层次，你就会看到不一样的东西。
+                       	</p>
+                    </div>
+                </div>
+
+                <div style="background-color: #F4FCFC; width: 100%; height: 20%; margin: 10px; padding-top: 2%; overflow: hidden;border-radius: 20px;">
+                    <div style="background: transparent;float: left;;width: 20%;height: 100%;">
+                        <img src="../image/contents/5_6/c2.jpg" class="circleimg">
+                    </div>
+                    <div style="width: 50%;height: 100%; float: left;">
+                        <p style="font-size: 20px;">选角的成功和编剧本身对角色性格的迥异设置，让这场竞技更为惊心动魄，让本来并非魔术良性载体的电影（作为虚构艺术，魔术和电影有太多同质性），借助魔术的三步骤定律和电影蒙太奇本质，完成了一次漂亮的戏法。
+                        </p>
+                    </div>
+                </div>
+
+
+                <div style="background-color: #F4FCFC; width: 100%; height: 20%; margin: 10px; padding-top: 2%;paddin overflow: hidden;border-radius: 20px;">
+                    <div style="background: transparent; float: right; ; width: 20%; height: 100%;">
+                        <img src="../image/contents/5_6/c3.jpg" class="circleimg">
+                    </div>
+					<div style="width: 50%;height: 100%; float: right;">
+                        <p style="font-size: 20px;padding-left: 80px">Part homage to the art of performance, part admiration of science and technology, part unexpected turn to science fiction, and total mind-melting madness.
+                    </div>
+                    
+                </div>
+				<div style="background-color: #F4FCFC; width: 100%; height: 20%; margin: 10px; padding-top: 2%; overflow: hidden;border-radius: 20px;">
+                    <div style="background: transparent;float: left;;width: 20%;height: 100%;">
+                        <img src="../image/contents/5_6/c4.jpg" class="circleimg">
+                    </div>
+                    <div style="width: 50%;height: 100%; float: left;">
+                        <p style="font-size: 20px;">人生最愛的七部片之一。諾蘭兄弟是一對缺乏獨創的巧匠，改編他山之石的成就註定遠比千金敝帚更好，而本片無疑且是最適合他倆的舞台，不因敘事多線，更因這則故事的本質便是一對偏執地以改編他人技法為畢生能事的兄弟如何打破舞台本身.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../js/content.js"></script>
+    <script src="../js/jquery.easing.1.3.js"></script>
+    <script src="../js/jquery.scrollify.js"></script>
+    <script>
+		
+        $(".bgscroll").css({
+            "height": window.innerHeight + "px"
+        });
+        $(function () {
+            $('.panel').css({
+                'height': $('.bgscroll').height()
+            });
+            $.scrollify({
+                section: '.panel',
+                target: '.bgscroll'
+
+            });
+        });
+        $('.panel').css({
+            'height': (window.innerHeight) + "px"
+        });
+    </script>
+
+</body>
+
+</html>

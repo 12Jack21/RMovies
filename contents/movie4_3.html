@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>死侍2</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link href="../bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- <link href="../css/indexcss.css" rel="stylesheet"> -->
+    <link href="../css/contentcss.css" rel="stylesheet">
+    <script src="../bootstrap-3.3.7-dist/js/jquery-3.3.1.min.js"></script>
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="../bootstrap-3.3.7-dist/js/jquery.mousewheel.js"></script>
+    <style type="text/css">
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body p {
+            color: #000;
+        }
+
+        .bg {
+            display: table;
+            width: 100%;
+            height: 100%;
+            padding: 0 0;
+            left: 0;
+            color: #fff;
+            background: url(../image/contents/4_3/bg1.jpg) no-repeat bottom center;
+            background-color: #000;
+            background-size: cover;
+            animation: bgAnimation 2.5s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes bgAnimation {
+            0% {
+                opacity: 0;
+                background-size: 130%;
+            }
+
+            100% {
+                opacity: 1;
+                background-size: 100%;
+            }
+        }
+
+        .bgscroll {
+            float: left;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+
+<body id="type0" class="" style="background: #fff;">
+    <a href="../index.html">
+	<!--右下角返回主页栏-->
+    <div class="box">
+        <div class="bg2"><img src="../image/contents/home.png" alt="..." style="width: 100%"></div>
+        <div class="cover"><p>返回首页</p></div>
+    </div> </a>
+
+
+    <div class="bgscroll">
+        <div style="background: transparent" id="n0" class="panel">
+            <div class="bg" style="position:fixed;z-index: -1;"></div>
+            <div class="bg" style="background:transparent;position: relative;">
+                <!-- <div style="width: 8%;height: 10%;background: rgba(200, 200, 200, 0.5);left: 46%;top: 85%;position: absolute;">
+            <a href="#n1"><img src="../image/contents/down.png" alt="..." style="width: 80%;left: 10%;top:5%;position: absolute;"></a>
+        </div> -->
+                <div id="down" style="width: 8%;height: 10%;background: rgba(200, 200, 200, 0);left: 46%;top: 85%;position: absolute;z-index: 100">
+                    <a href="#n1" class="turnToContent">
+                        <canvas id="downCanvas" width="50" height="50" style="background: transparent;opacity: 0;">你的浏览器不支持canvas，请下载更新版本的浏览器
+                        </canvas>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bg panel" style="background: #F4F4F4;animation: none;margin-bottom: 0px;" id="n1">
+            <div style="margin-left: 10%;margin-top: 3%;width: 80%;background: transparent;height: 90%;overflow: hidden;">
+                <div style="float: left;width: 20%;background: transparent">
+                    <img src="../image/contents/4_3/poster.jpg" alt="..." class="img1" style="float: left;">
+                </div>
+                <div style="background: #F4FCFC;height: 48%;width: 80%;float: left;padding: 40px;overflow: hidden;border-radius: 20px;">
+                    <p style="font-size: 60px;margin-bottom: 20px">死侍2</p>
+                    <p style="font-size: 15px;margin-top: -30px">豆瓣评分:7.5</p>
+                    <p style="font-size: 18px">电影简介：</p>
+                    <p style="font-size: 16.5px;">　漫威史上最贱的雇佣兵死侍再度归来！本与女友过着幸福生活的死侍（瑞安·雷诺兹 饰）上门寻仇，美好生活岌岌可危。然而悲惨的日子还没结束，死侍还和想要接纳他的X战警剪不断，理还乱。
+
+
+                    </p>
+                    <p style="font-size: 16.5px;">就在这位平日里插科打诨的英雄人生跌入谷底之时，一位强大的时空穿越者——电索（乔什·布洛林 饰）却盯上了死侍想要保护的少年。为迎强敌，死侍广发英雄帖，临时组建了X特攻队。就凭他们真的能打过这位来自未来的敌人么？
+
+                    </p>
+                </div>
+				<!--演职员贴纸-->
+				<div style="background: #F4FCFC;float: left;margin-top: 20px;width:100%;border-radius: 20px;">
+					<div style="padding:35px;background: transparent;height: 85px;float: left;width: 100%">
+                    <p style="font-size: 25px">主要演职员：</p>
+                	</div>
+					<div style="width: 100%;height: 38%;overflow: hidden;background: transparent">
+                    <div class="scrollpic">
+                        <ul id="scrollx2" style="margin-left: -60px">
+                            <div id="scrollx">
+                                <li><img src="../image/contents/4_3/p1.jpg" alt="...">
+                                    <p>大卫·雷奇</p>
+                                    <p>导演</p>
+                                </li>
+                                <li><img src="../image/contents/4_3/p2.jpg" alt="...">
+                                    <p>瑞恩·雷诺兹 </p>
+                                    <p>演员</p>
+                                </li>
+                                <li><img src="../image/contents/4_3/p3.jpg" alt="...">
+                                    <p>乔什·布洛林</p>
+                                    <p>饰演蝙蝠侠</p>
+                                </li>
+                                <li><img src="../image/contents/4_3/p4.jpg" alt="...">
+                                    <p>莫蕾娜·巴卡林</p>
+                                    <p>演员</p>
+                                </li>
+                                <li><img src="../image/contents/4_3/p5.jpg" alt="...">
+                                    <p>朱利安·迪尼森 </p>
+                                    <p>演员</p>
+                                </li>
+								<li><img src="../image/contents/4_3/p6.jpg" alt="...">
+                                    <p>莎姬·贝兹 </p>
+                                    <p>演员</p>
+                                </li>
+                            </div>
+                        </ul>
+                        <a href="javascript:void(0)" id="scrollToLeft">
+                            <div class="scroll-left">
+                                <img src="../image/contents/left.png" alt="...">
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" id="scrollToRight">
+                            <div class="scroll-right">
+                                <img src="../image/contents/right.png" alt="...">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+				</div>
+                
+
+                
+            </div>
+        </div>
+
+
+
+
+        <div class="bg panel" style="background: #ECECEC;animation: none;margin-bottom: 0px;left: 0;" id="n2">
+            <div class="vertical-scroll">
+                <ul>
+                    <div id="img1"><a href="javascript:void(0)1"><img src="../image/contents/4_3/img1.jpg" alt="..."></a></div>
+                    <div id="img2"> <a href="javascript:void(0)2"><img src="../image/contents/4_3/img2.jpg" alt="..."></a></div>
+                    <div id="img3"> <a href="javascript:void(0)3"><img src="../image/contents/4_3/img3.jpg" alt="..."></a></div>
+                    <div id="img4"> <a href="javascript:void(0)4"><img src="../image/contents/4_3/img4.jpg" alt="..."></a></div>
+                    <div id="img5"> <a href="javascript:void(0)5"><img src="../image/contents/4_3/img5.jpg" alt="..."></a></div>
+                </ul>
+            </div>
+            <div class="commentDiv">
+
+                <p>影评：</p>
+				<!--一个影评单元-->
+                <div style="background-color: #F4FCFC; width: 100%; height: 20%; margin: 10px; padding-top: 2%;paddin overflow: hidden;border-radius: 20px;">
+					<div style="background: transparent; float: right; ; width: 20%; height: 100%;">
+                        <img src="../image/contents/4_3/c1.jpg" class="circleimg">
+                    </div>
+                    <div style="width: 50%;height: 100%; float: right;">
+                        <p style="font-size: 20px;padding-left: 60px">片中所有梗都玩出了新高度，死侍吐槽起人来真的是连自己都不放过，好像一部电影里的男主在电影里评论这部电影，死侍仿佛把电影玩出新玩法，他仿佛不是一个电影中的人物，仿佛就是一个在现实中的人一样,所有人物的塑造也是极其成功的。
+                       	</p>
+                    </div>
+                </div>
+
+                <div style="background-color: #F4FCFC; width: 100%; height: 20%; margin: 10px; padding-top: 2%; overflow: hidden;border-radius: 20px;">
+                    <div style="background: transparent;float: left;;width: 20%;height: 100%;">
+                        <img src="../image/contents/4_3/c2.jpg" class="circleimg">
+                    </div>
+                    <div style="width: 50%;height: 100%; float: left;">
+                        <p style="font-size: 20px;">“反正也不会死”本来就是对动作片的戏谑，这部将此无尽放大放大，都快成了电影版的罗杰·伊伯特《我知道你们又来这一套》。虽然里面的动作戏只是漫改片的中等水平，台词也未见句句精妙，但上述手段能看出漫威强大的“文化自信”.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div style="background-color: #F4FCFC; width: 100%; height: 20%; margin: 10px; padding-top: 2%;paddin overflow: hidden;border-radius: 20px;">
+                    <div style="background: transparent; float: right; ; width: 20%; height: 100%;">
+                        <img src="../image/contents/4_3/c3.jpg" class="circleimg">
+                    </div>
+					<div style="width: 50%;height: 100%; float: right;">
+                        <p style="font-size: 20px;padding-left: 80px">Just as Robert Downey, Jr. has become the definitive Iron Man, Ryan Reynolds is Deadpool. It's the role he was born to play and whenever he's on screen, the movie's inner classic shines forth.
+                        </p>
+                    </div>
+                    
+                </div>
+				
+				<div style="background-color: #F4FCFC; width: 100%; height: 20%; margin: 10px; padding-top: 2%; overflow: hidden;border-radius: 20px;">
+                    <div style="background: transparent;float: left;;width: 20%;height: 100%;">
+                        <img src="../image/contents/4_3/c4.jpg" class="circleimg">
+                    </div>
+                    <div style="width: 50%;height: 100%; float: left;">
+                        <p style="font-size: 20px;">Deadpool 2 is essentially a live action Looney Toons cartoon masquerading as a superhero film. It's not trying to be high art, it's just trying to make you laugh.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../js/content.js"></script>
+    <script src="../js/jquery.easing.1.3.js"></script>
+    <script src="../js/jquery.scrollify.js"></script>
+    <script>
+		
+        $(".bgscroll").css({
+            "height": window.innerHeight + "px"
+        });
+        $(function () {
+            $('.panel').css({
+                'height': $('.bgscroll').height()
+            });
+            $.scrollify({
+                section: '.panel',
+                target: '.bgscroll'
+
+            });
+        });
+        $('.panel').css({
+            'height': (window.innerHeight) + "px"
+        });
+    </script>
+
+</body>
+
+</html>
