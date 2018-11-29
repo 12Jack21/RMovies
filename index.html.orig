@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>电影推荐</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/indexcss.css" rel="stylesheet">
+    <script src="bootstrap-3.3.7-dist/js/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .bg {
+            display: table;
+            width: 100%;
+            height: 100%;
+            padding: 0 0;
+            text-align: center;
+            color: #fff;
+            background: url(image/index/bg1.jpg) no-repeat bottom center;
+            background-color: #000;
+            background-size: cover;
+            animation: bgAnimation 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes bgAnimation {
+            0% {
+                opacity: 0.2;
+                background-size: 130% 130%;
+            }
+
+            100% {
+                opacity: 1;
+                background-size: 100% 100%;
+            }
+        }
+    </style>
+</head>
+
+
+<body id="type0">
+    <div class="bg" style="position:fixed;z-index: -1;"></div>
+    <div style="background:#000;display: table;width: 100%;height: 100%;opacity: 0;" id="changebg"></div>
+    <div id="bg1" class="newbg" style="z-index: -1;opacity: 0;height: 300px;"><img src="image/index/bg1.jpg" alt="..."
+            style="width: 100%;height: 100%;"></div>
+    <div id="bg2" class="newbg" style="z-index: -2;opacity: 0;height: 600px;"><img src="image/index/bg2.jpg" alt="..."
+            style="width: 100%;height: 100%"></div>
+    <div id="bg3" class="newbg" style="z-index: -3;opacity: 0;height: 900px;"><img src="image/index/bg3.jpg" alt="..."
+            style="width: 100%;height: 100%"></div>
+    <div id="bg4" class="newbg" style="z-index: -4;opacity: 0;height: 900px;"><img src="image/index/bg4.jpg" alt="..."
+            style="width: 100%;height: 100%"></div>
+    <div id="bg5" class="newbg" style="z-index: -5;opacity: 0;height: 900px;"><img src="image/index/bg5.jpg" alt="..."
+            style="width: 100%;height: 100%"></div>
+<<<<<<< HEAD
+	<div id="bg6" class="newbg" style="z-index: -6;opacity: 0;height: 900px;"><img src="image/index/bg2.jpg" alt="..."
+            style="width: 100%;height: 100%"></div>
+	
+=======
+    <div id="bg5" class="newbg" style="z-index: -6;opacity: 0;height: 900px;"><img src="image/index/bg5.jpg" alt="..."
+            style="width: 100%;height: 100%"></div>
+
+
+>>>>>>> 1b08a9944d0781a491655c3f97f8fad3ac935345
+    <nav class="navbar navbar-fixed-top my-navbar" role="navigation">
+        <div class="container-fluid ">
+            <div class="navbar-header" style="position: relative; left:15%;">
+                <a class="navbar-brand turnToContent" href="#type0">
+                    <div class="myScorllList_big">
+<<<<<<< HEAD
+                        <ul>
+							<!--Logo-->
+                            <li>动作片</li>
+                            <li>ActionMovie</li>
+                        </ul>
+=======
+                        <img src="image/index/LOGO.png"  style="margin-top: -20px;">
+>>>>>>> 1b08a9944d0781a491655c3f97f8fad3ac935345
+                    </div>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse pull-right" id="example-navbar-collapse" style="position:relative;right: 10%;">
+                <ul class="nav navbar-nav">
+                    <li><a class="turnToContent" href="#type1">
+                            <div class="myScorllList">
+                                <ul>
+<<<<<<< HEAD
+                                    <li>科幻片</li>
+                                    <li>FictionMovie</li>
+=======
+                                    <li>科幻类</li>
+                                    <li>Sci-fi Movie</li>
+>>>>>>> 1b08a9944d0781a491655c3f97f8fad3ac935345
+                                </ul>
+                            </div>
+                        </a></li>
+                    <li><a class="turnToContent" href="#type2">
+                            <div class="myScorllList">
+                                <ul>
+<<<<<<< HEAD
+                                    <li>爱情片</li>
+                                    <li>LoveMovie</li>
+=======
+                                    <li>爱情类</li>
+                                    <li>Romantic Movie</li>
+>>>>>>> 1b08a9944d0781a491655c3f97f8fad3ac935345
+                                </ul>
+                            </div>
+                        </a></li>
+                    <li><a class="turnToContent" href="#type3">
+                            <div class="myScorllList">
+                                <ul>
+                                    <li>动作类</li>
+                                    <li>ActionMovie</li>
+                                </ul>
+                            </div>
+                        </a></li>
+                    <li><a class="turnToContent" href="#type4">
+                            <div class="myScorllList">
+                                <ul>
+<<<<<<< HEAD
+                                    <li>喜剧片</li>
+                                    <li>ComedyMovie</li>
+=======
+                                    <li>喜剧类</li>
+                                    <li>Comedy</li>
+                                </ul>
+                            </div>
+                        </a></li>
+                    <li><a href="#">
+                            <div class="myScorllList">
+                                <ul>
+                                    <li>悬疑类</li>
+                                    <li>SuspenseMoive</li>
+>>>>>>> 1b08a9944d0781a491655c3f97f8fad3ac935345
+                                </ul>
+                            </div>
+                        </a></li>
+                    <li><a class="turnToContent" href="#type5">
+                            <div class="myScorllList">
+                                <ul>
+                                    <li>悬疑片</li>
+                                    <li>SuspenseMovie</li>
+                                </ul>
+                            </div>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="moveText1">
+        <p>Movie</p>
+    </div>
+    <div class="moveText2">
+        <p>为 电 影 而 生</p>
+        <p style="font-size: 60px">Born for movie</p>
+    </div>
+
+    <!-- <div style="background-color: white" id="type1">
+        <div style="height:150px;padding: 50px">
+            <p style="font-size:40px;text-align: center">动作片</p>
+        </div>
+        <div style="position:relative;left:15%;width: 70% ">
+            <div class="row" style="height: 250px;">
+                <div class="col-sm-4 col-lg-4 ">
+                    <div class="myImgTrans" style="position: relative;">
+                        <a href="#">
+                            <img src="bg3.png" style="position: absolute;">
+                            <img src="bg4.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-lg-4 mypadding">
+                    <div class=" myImgTrans" style="position: relative;">
+                        <a href="#">
+                            <img src="bg3.png" style="position: absolute;">
+                            <img src="bg4.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-lg-4 mypadding">
+                    <div class=" myImgTrans" style="position: relative;">
+                        <a href="#">
+                            <img src="bg3.png" style="position: absolute;">
+                            <img src="bg4.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix" style="margin-bottom: 30px;"></div>
+            <div class="row">
+                <div class="col-sm-4 col-lg-4 mypadding">
+                    <div class=" myImgTrans" style="position: relative;">
+                        <a href="#">
+                            <img src="bg3.png" style="position: absolute;">
+                            <img src="bg4.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-lg-4 mypadding">
+                    <div class=" myImgTrans" style="position: relative;">
+                        <a href="#">
+                            <img src="bg3.png" style="position: absolute;">
+                            <img src="bg4.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-lg-4 mypadding">
+                    <div class=" myImgTrans" style="position: relative;">
+                        <a href="#">
+                            <img src="bg3.png" style="position: absolute;">
+                            <img src="bg4.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div style="background-color: #E1E1E1 ;padding-bottom: 20px" id="type1">
+        <div style="visibility: hidden">
+            <div style="height:100px;padding: 20px" id="title1">
+                <p style="font-size:40px;text-align: center">科幻片</p>
+            </div>
+            <div style="position:relative;left:15%;width: 70% ">
+                <div class="row" id="content1_1" style="padding-bottom: 20px">
+                    <div class="col-sm-4 col-lg-4">
+                        <a href="contents/movie1_1.html" style="width: 100%;position: relative;" class="galary">
+                            <img src="image/index/movie1_1.png" alt="">
+                            <div>
+                                <p>动作片</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-lg-4 mypadding">
+                        <a href="contents/movie1_2.html" style="width: 100%;position: relative;" class="galary">
+                            <img src="image/index/movie1_1.png" alt="">
+                            <div>
+                                <p>动作片</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-lg-4 mypadding">
+                        <a href="contents/movie1_1.html" style="width: 100%;position: relative;" class="galary">
+                            <img src="image/index/movie1_1.png" alt="">
+                            <div>
+                                <p>动作片</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="clearfix" style="margin-bottom: 10px;"></div>
+                <div class="row" id="content1_2">
+                    <div class="col-sm-4 col-lg-4 mypadding">
+                        <a href="contents/movie1_1.html" style="width: 100%;position: relative;" class="galary">
+                            <img src="image/index/movie1_1.png" alt="">
+                            <div>
+                                <p>动作片</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-lg-4 mypadding">
+                        <a href="contents/movie1_1.html" style="width: 100%;position: relative;" class="galary">
+                            <img src="image/index/movie1_1.png" alt="">
+                            <div>
+                                <p>动作片</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-lg-4 mypadding">
+                        <a href="contents/movie1_1.html" style="width: 100%;position: relative;" class="galary">
+                            <img src="image/index/movie1_1.png" alt="">
+                            <div>
+                                <p>动作片</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="height: 600px"></div>
+    <div style="background-color: white ;padding-bottom: 20px" id="type2">
+        <div style="visibility: hidden">
+            <div style="height:100px;padding: 20px" id="title2">
+                <p style="font-size:40px;text-align: center">爱情片</p>
+            </div>
+            <div style="position:relative;left:15%;width: 70% ">
+                <div class="row" id="content2_1" style="padding-bottom: 20px">
+                    <div class="col-sm-4 col-lg-4">
+                        <a href="contents/movie1_1.html" style="width: 100%;position: relative;" class="galary">
+                            <img src="image/index/movie1_1.png" alt="">
+                            <div>
+                                <p>动作片</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-lg-4 mypadding">
+                        <a href="contents/movie1_1.html" style="width: 100%;position: relative;" class="galary">
+                            <img src="image/index/movie1_1.png" alt="">
+                            <div>
+                                <p>动作片</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-lg-4 mypadding">
+                        <a href="contents/movie1_1.html" style="width: 100%;position: relative;" class="galary">
+                            <img src="image/index/movie1_1.png" alt="">
+                            <div>
+                                <p>动作片</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="clearfix" style="margin-bottom: 10px;"></div>
+                <div class="row" id="content2_2">
+                    <div class="col-sm-4 col-lg-4 mypadding">
+                        <a href="contents/movie1_1.html" style="width: 100%;position: relative;" class="galary">
+                            <img src="image/index/movie1_1.png" alt="">
+                            <div>
+                                <p>动作片</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-lg-4 mypadding">
+                        <a href="contents/movie1_1.html" style="width: 100%;position: relative;" class="galary">
+                            <img src="image/index/movie1_1.png" alt="">
+                            <div>
+                                <p>动作片</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-lg-4 mypadding">
+                        <a href="contents/movie1_1.html" style="width: 100%;position: relative;" class="galary">
+                            <img src="image/index/movie1_1.png" alt="">
+                            <div>
+                                <p>动作片</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div style="height: 600px"></div>
+    <div style="background-color: white ;padding-bottom: 20px" id="type3">
+        <div style="visibility: hidden">
+            <div style="height:100px;padding: 20px" id="title3">
+                <p style="font-size:40px;text-align: center">动作片</p>
+            </div>
+            <div style="position:relative;left:15%;width: 70% ">
+                <div class="row" id="content3_1" style="padding-bottom: 20px">
+                    <div class="col-sm-4 col-lg-4">
+                        <a href="contents/movie1_1.html" style="width: 100%;position: relative;" class="galary">
+                            <img src="image/index/movie1_1.png" alt="">
+                            <div>
+                                <p>动作片</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-lg-4 mypadding">
+                        <a href="contents/movie1_1.html" style="width: 100%;position: relative;" class="galary">
+                            <img src="image/index/movie1_1.png" alt="">
+                            <div>
+                                <p>动作片</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-lg-4 mypadding">
+                        <a href="contents/movie1_1.html" style="width: 100%;position: relative;" class="galary">
+                            <img src="image/index/movie1_1.png" alt="">
+                            <div>
+                                <p>动作片</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="clearfix" style="margin-bottom: 10px;"></div>
+                <div class="row" id="content3_2">
+                    <div class="col-sm-4 col-lg-4 mypadding">
+                        <a href="contents/movie1_1.html" style="width: 100%;position: relative;" class="galary">
+                            <img src="image/index/movie1_1.png" alt="">
+                            <div>
+                                <p>动作片</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-lg-4 mypadding">
+                        <a href="contents/movie1_1.html" style="width: 100%;position: relative;" class="galary">
+                            <img src="image/index/movie1_1.png" alt="">
+                            <div>
+                                <p>动作片</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-lg-4 mypadding">
+                        <a href="contents/movie1_1.html" style="width: 100%;position: relative;" class="galary">
+                            <img src="image/index/movie1_1.png" alt="">
+                            <div>
+                                <p>动作片</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div style="height: 600px"></div>
+    <div style="background-color: white ;padding-bottom: 20px" id="type4">
+        <div style="visibility: hidden">
+            <div style="height:100px;padding: 20px" id="title4">
+                <p style="font-size:40px;text-align: center">喜剧片</p>
+            </div>
+            <div style="position:relative;left:15%;width: 70% ">
+                <div class="row" id="content4_1" style="padding-bottom: 20px">
+                    <div class="col-sm-4 col-lg-4">
+                        <a href="contents/movie1_1.html" style="width: 100%;position: relative;" class="galary">
+                            <img src="image/index/movie1_1.png" alt="">
+                            <div>
+                                <p>动作片</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-lg-4 mypadding">
+                        <a href="contents/movie1_1.html" style="width: 100%;position: relative;" class="galary">
+                            <img src="image/index/movie1_1.png" alt="">
+                            <div>
+                                <p>动作片</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-lg-4 mypadding">
+                        <a href="contents/movie1_1.html" style="width: 100%;position: relative;" class="galary">
+                            <img src="image/index/movie1_1.png" alt="">
+                            <div>
+                                <p>动作片</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="clearfix" style="margin-bottom: 10px;"></div>
+                <div class="row" id="content4_2">
+                    <div class="col-sm-4 col-lg-4 mypadding">
+                        <a href="contents/movie1_1.html" style="width: 100%;position: relative;" class="galary">
+                            <img src="image/index/movie1_1.png" alt="">
+                            <div>
+                                <p>动作片</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-lg-4 mypadding">
+                        <a href="contents/movie1_1.html" style="width: 100%;position: relative;" class="galary">
+                            <img src="image/index/movie1_1.png" alt="">
+                            <div>
+                                <p>动作片</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-lg-4 mypadding">
+                        <a href="contents/movie1_1.html" style="width: 100%;position: relative;" class="galary">
+                            <img src="image/index/movie1_1.png" alt="">
+                            <div>
+                                <p>动作片</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="height: 600px"></div>
+<<<<<<< HEAD
+	<div style="background-color: #E1E1E1 ;padding-bottom: 20px" id="type5">
+        <div style="visibility: hidden">
+            <div style="height:100px;padding: 20px" id="title5">
+                <p style="font-size:40px;text-align: center">悬疑片</p>
+=======
+
+    <div style="background-color: white ;padding-bottom: 20px" id="type5">
+        <div style="visibility: hidden">
+            <div style="height:100px;padding: 20px" id="title5">
+                <p style="font-size:40px;text-align: center">动作片</p>
+>>>>>>> 1b08a9944d0781a491655c3f97f8fad3ac935345
+            </div>
+            <div style="position:relative;left:15%;width: 70% ">
+                <div class="row" id="content5_1" style="padding-bottom: 20px">
+                    <div class="col-sm-4 col-lg-4">
+                        <a href="contents/movie1_1.html" style="width: 100%;position: relative;" class="galary">
+                            <img src="image/index/movie1_1.png" alt="">
+                            <div>
+                                <p>动作片</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-lg-4 mypadding">
+                        <a href="contents/movie1_1.html" style="width: 100%;position: relative;" class="galary">
+                            <img src="image/index/movie1_1.png" alt="">
+                            <div>
+                                <p>动作片</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-lg-4 mypadding">
+                        <a href="contents/movie1_1.html" style="width: 100%;position: relative;" class="galary">
+                            <img src="image/index/movie1_1.png" alt="">
+                            <div>
+                                <p>动作片</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="clearfix" style="margin-bottom: 10px;"></div>
+                <div class="row" id="content5_2">
+                    <div class="col-sm-4 col-lg-4 mypadding">
+                        <a href="contents/movie1_1.html" style="width: 100%;position: relative;" class="galary">
+                            <img src="image/index/movie1_1.png" alt="">
+                            <div>
+                                <p>动作片</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-lg-4 mypadding">
+                        <a href="contents/movie1_1.html" style="width: 100%;position: relative;" class="galary">
+                            <img src="image/index/movie1_1.png" alt="">
+                            <div>
+                                <p>动作片</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-lg-4 mypadding">
+                        <a href="contents/movie1_1.html" style="width: 100%;position: relative;" class="galary">
+                            <img src="image/index/movie1_1.png" alt="">
+                            <div>
+                                <p>动作片</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<<<<<<< HEAD
+	<div style="height: 600px"></div>
+	
+	<!--页脚-->
+	<div style="height: 80px;background-color: #D2D2D2;text-align: center;overflow: hidden;">
+		<hr style="width: 90%;height: 5px;margin-left: 5%;"/>
+		<div style="height: 40px;font-size: 26px;">Copyright 2018-11 Make by WhatTheHell team</div>
+	</div>
+=======
+    <div style="height: 600px"></div>
+
+>>>>>>> 1b08a9944d0781a491655c3f97f8fad3ac935345
+
+    <script src="js/index.js"> </script>
+</body>
+
+</html>
